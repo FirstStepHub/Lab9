@@ -27,12 +27,13 @@ int main(){
 	cout << setw(13) << left << "NewBalance";
 	cout << "\n";
 	
+	prevBalance = loan;
+	
 	while (prevBalance > 0)
 	{
 		interest = prevBalance * (rate/100) ;
 		total = prevBalance + interest ;
 		payment = pay ;
-		prevBalance = loan;
 		
 		if(total < pay)
 		{
